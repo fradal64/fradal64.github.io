@@ -3,15 +3,20 @@ layout: default
 title: "Home"
 ---
 
-{% if site.show_excerpts %}
-  {% for post in site.posts %}
-    <article>
-      {% include meta.html post=post %}
-      {{ post.excerpt }}
-      <footer class="button"><a href="{{ post.url | relative_url }}">read more</a></footer>
-    </article>
-  {% endfor %}
-{% else %}
-  {% capture source %}{% include_relative archive.html title="Posts" %}{% endcapture %}
-  {{ source | split: "---" | last }}
-{% endif %}
+<article>
+  <header>
+    <h1>Leonardo Garofalo</h1>
+    <h2>Sviluppatore Software</h2>
+  </header>
+
+  <p>Sviluppo soluzioni software personalizzate per aziende e professionisti.</p>
+
+  <p>Per informazioni e preventivi, contattatemi via PEC: <a href="mailto:leonardogarofalo@postecertifica.it">leonardogarofalo@postecertifica.it</a></p>
+
+  <footer style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #ddd; font-size: 0.9rem; color: #666;">
+    <p><strong>Leonardo Garofalo</strong> - Sviluppatore Software<br>
+    Partita IVA: 01929740700<br>
+    PEC: <a href="mailto:leonardogarofalo@postecertifica.it">leonardogarofalo@postecertifica.it</a><br>
+    Campobasso (CB), Italia</p>
+  </footer>
+</article>

@@ -13,11 +13,15 @@
 
 {{ content }}
 
-{%- if site.footer -%}
 <footer class="hover">
-  <div>{{ site.description }}</div>
-  {% include menu.html menu=site.footer %}
+  <div style="margin-bottom: 1rem;">
+    <strong>Leonardo Garofalo</strong> - Sviluppatore Software<br>
+    Partita IVA: 01929740700 | PEC: <a href="mailto:leonardogarofalo@postecertifica.it">leonardogarofalo@postecertifica.it</a><br>
+    Campobasso (CB), Italia
+  </div>
+  {%- if site.footer -%}
+    {% include menu.html menu=site.footer %}
+  {%- endif -%}
 </footer>
-{%- endif -%}
 
 </html>
